@@ -1,0 +1,65 @@
+	<!-- mobile view only -->
+	<!-- Mobile View for Footer Menu only -->
+	<div class="ft_me_es">
+		<a ng-href="#/" class="ft_se_mo active" ng-class="currentState=='home'? 'active':'' " href="#/home">
+			<i class="fas fa-home"></i> Home 
+		</a>
+		<a ng-href="#/mobilecat" class="ft_se_mo" ng-class="((currentState=='mobilecat') || (currentState == 'category')) ? 'active':'' " href="#/mobilecat">
+			<i class="fas fa-th-large"></i> Categories 
+		</a>
+		<a ng-class="currentState=='compare'? 'active':'' " href="#/compare" ng-click="" class="ft_se_mo ft_se_md">
+			<i class="fas fa-balance-scale"></i>
+			<span style="-webkit-transform: translateY(-5px);-ms-transform: translateY(-5px);transform: translateY(-5px)">Compare</span>
+		</a>
+		<a ng-click="" ng-class="currentState=='wishlist'? 'active':'' " class="ft_se_mo"  href="#/wishlist">
+			<i class="fas fa-shopping-bag"></i> Wishlist 
+		</a>
+		<a ng-click="vmmo.moreClick()" class="ft_se_mo">
+			<i class="fas fa-ellipsis-v"></i> More
+		</a>
+	</div>
+
+	
+
+	<div ng-click="vmmo.closeBackdrop()" id="backdrop" class="bg-bl-o" style="display: none;"></div>
+	<div id="sidebar" class="ios-ri-me">
+		<div class="ios-pro-cnt">
+			<div class="ios-pro-img">
+				<img >
+			</div>
+			<h4>radhashree</h4>
+			<p></p>
+		</div>
+		<div class="ios-ri-li">
+			<ul>
+				<li ui-sref="home" href="#/">
+					<span class="icon-dashboard"></span>Home
+				</li>
+				<li ui-sref="myaccount" href="#/myaccount">
+					<span class="icon-feed"></span>MyAccount
+				</li>
+				
+				<li ui-sref="blog">
+					<span class="icon-feed"></span>Blogs
+				</li>
+				<li ui-sref="cart" href="#/cart">
+					<span class="icon-feed"></span>Cart
+				</li>
+				<li ui-sref="wishlist" href="#/wishlist">
+					<span class="icon-feed"></span>Wishlist
+				</li>
+				<li ui-sref="contact" href="#/aboutus">
+					<span class="icon-feed"></span>About Us
+				</li>
+				
+				<li ui-sref="customer">
+					<span class="icon-feed"></span>Customer Service
+				</li>
+				<li ui-sref="offers">
+					<span class="icon-feed"></span>Offers
+				</li>
+			</ul>
+		</div>
+	</div>
+
+  

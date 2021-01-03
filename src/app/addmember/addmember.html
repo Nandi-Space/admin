@@ -1,0 +1,315 @@
+
+
+
+	<acme-header></acme-header>
+	<!--== BODY CONTNAINER ==-->
+	<div class="container-fluid sb2">
+		<div class="row">
+		<acme-navbar></acme-navbar>
+			<!--== BODY INNER CONTAINER ==-->
+			<div class="sb2-2">
+				<!--== breadcrumbs ==-->
+				<div class="sb2-2-2">
+					<ul>
+						<li><a href="index-1.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a> </li>
+						<li class="active-bre"><a href="#"> Add User</a> </li>
+						<li class="page-back"><a href="#"><i class="fa fa-backward" aria-hidden="true"></i> Back</a> </li>
+					</ul>
+				</div>
+				<div class="tz-2 tz-2-admin">
+					<div class="tz-2-com tz-2-main">
+						<h4>Add New User</h4> <a class="dropdown-button drop-down-meta drop-down-meta-inn" href="#" data-activates="dr-list"><i class="material-icons">more_vert</i></a>
+						<ul id="dr-list" class="dropdown-content">
+							<li><a href="#!">Add New</a> </li>
+							<li><a href="#!">Edit</a> </li>
+							<li><a href="#!">Update</a> </li>
+							<li class="divider"></li>
+							<li><a href="#!"><i class="material-icons">delete</i>Delete</a> </li>
+							<li><a href="#!"><i class="material-icons">subject</i>View All</a> </li>
+							<li><a href="#!"><i class="material-icons">play_for_work</i>Download</a> </li>
+						</ul>
+						<!-- Dropdown Structure -->
+						<div class="split-row">
+							<div class="col-md-12">
+								<div class="box-inn-sp ad-inn-page">
+									<div class="tab-inn ad-tab-inn">
+										<div class="hom-cre-acc-left hom-cre-acc-right">
+											<div class="">
+												<form class="">
+													<div class="row">
+														<label for="img">Upload your photo:</label>
+														<div class="button" style="color: aquamarine;" ngf-select ng-model="file" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100">SELECT</div>  
+													</div>
+													<div class="row">
+													
+														<div class="input-field col s12">
+															<input id="first_name" ng-model="member.name"type="text" placeholder="Enter Name" class="validate">
+														
+														</div>
+														
+													</div>
+													
+													
+													<div class="row">
+														
+														<div class="input-field col s12">
+															
+															<input id="email" ng-model="member.email" type="email" placeholder="Enter Email Address" class="validate">
+														
+														</div>
+													</div>
+													<div class="row">
+														
+														<div class="input-field col s12">
+															<input ng-model="member.password"  placeholder="Enter Password"type="text" class="validate">
+														
+														</div>
+													</div>
+													<div class="row">
+														
+														<div class="input-field col s12">
+															<input class="input-field col s4" ng-model="mem.birthday"  placeholder="Enter birth Day" type="number">
+															<input class="input-field col s4" ng-model="mem.birthmonth"  placeholder="Enter birth Month" type="number" >
+															<input class="input-field col s4" ng-model="mem.birthyear"  placeholder="Enter birth Year" type="number">
+														
+														</div>
+													</div>
+												   
+												  <div class="row">
+														
+													  <div class="input-field col s12">
+														<input  ng-model="member.age"  placeholder=" Enter Age" class="validate">
+													
+													  </div>
+												  </div>
+											  
+											      <div class="row">
+														
+											     	<div class="input-field col s12">
+													   <input  ng-model="member.weight"  placeholder="Enter Weight" class="validate">
+												
+												    </div>
+												 </div>
+												
+												 <div class="row">
+													<div class="input-field col s12">
+														<select ng-model="member.gender" style="display: block;">
+															<option value="" disabled selected hidden>Enter Gender</option>
+                         
+                                                          <option   value="male">Male</option>
+                                                             <option   value="female">Female</option>
+                                                        </select>
+												 
+													 </div>
+												  </div>
+												  <div class="row">
+													<div class="input-field col s12">
+												 
+													
+													<select ng-model="member.height" style="display: block">
+														<option value="" disabled selected hidden>Enter Height</option>
+														<option  ng-repeat=" z   in height " value="{{z.height_value}}">{{z.height}}</option></select>
+														</div>
+												 
+												 </div>	 
+												 <div class="row">
+													<div class="input-field col s12">
+
+												 
+													
+													<select ng-model="member.martialstats" style="display: block">
+														<option value="" disabled selected hidden>Enter Martialstatus</option>
+														<option  ng-repeat=" m in status " value="{{m.id}}">{{m.martialstatus}}</option></select>
+														</div>
+												 
+												 </div>	 
+												 <div class="row">
+													<div class="input-field col s12">
+																									
+													<select ng-model="member.occupation" style="display: block">
+														<option value="" disabled selected hidden>Enter Occupation</option>
+														<option  ng-repeat=" o in occupation " value="{{o.id}}">{{o.occupation}}</option></select>
+														</div>
+												 
+												 </div>	
+												 <div class="row">
+													<div class="input-field col s12">
+												 
+													
+													<select ng-model="member.cities" style="display: block">
+														<option value="" disabled selected hidden>enter permanent city</option>
+														<option  ng-repeat=" x in cities " value="{{x.id}}">{{x.city}}</option></select>
+														</div>
+												 
+												 </div>	 
+												 
+												 <div class="row">
+													<div class="input-field col s12">
+												 
+													
+													<select ng-model="member.country " style="display: block">
+														<option value="" disabled selected hidden>enter country</option>
+														<option  ng-repeat=" c in country " value="{{c.id}}">{{c.country}}</option></select>
+														</div>
+												 
+												 </div>	 
+												 <div class="row">
+													<div class="input-field col s12">
+												 
+													
+													<select ng-model="member.height" style="display: block">
+														<option value="" disabled selected hidden>enter language</option>
+														<option  ng-repeat=" l   in language " value="{{l.id}}">{{l.language}}</option></select>
+														</div>
+												 
+												 </div>	 
+												 <div class="row">
+													<div class="input-field col s12">
+												 
+													
+													<select ng-model="member.religion" style="display: block">
+														<option value="" disabled selected hidden>enter religion</option>
+														<option  ng-repeat=" r in religion " value="{{r.id}}">{{r.religion}}</option></select>
+														</div>
+												 
+												 </div>
+												  
+												
+									
+									
+												
+												
+													
+												<div class="row">
+														<div class="input-field col s12"> <button class="waves-effect waves-light btn-large full-btn" ng-click="vmam.register(member)">Submit User</button> </div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+
+
+							
+
+<!-- 
+							<div class="col-md-12">
+								<div class="box-inn-sp ad-inn-page">
+									<div class="tab-inn ad-tab-inn">
+										<div class="hom-cre-acc-left hom-cre-acc-right">
+											<div class="">
+												<form class="">
+													<div class="row">
+														<div class="input-field col s12">
+															<label >name</label>
+															<input  ng-model="pd.name" placeholder="name " class="validate">
+														
+														</div>
+													</div>
+													<div class="row">
+													
+														<div class="input-field col s12">
+															<input  ng-model="pd.email" placeholder="email" type="email" class="validate">
+															
+														</div>
+													</div>
+													
+													<div class="row">
+														<label for="list_addr">age</label>
+
+														<div class="input-field col s12">
+															<input ng-model="pd.age"  type="text"  placeholder ="age" class="validate">
+															
+														</div>
+													</div>
+													
+														<div class="row">
+															
+															<div class="input-field col s12">
+																<input  ng-model="pd.birthdate" placeholder="birthdate"  class="validate">
+																
+															</div>
+														</div>
+													
+													<div class="row">
+														<div class="input-field col s12">
+															<select  ng-model="pd.country">
+																<ng-option disabled selected>User Type</ng-option>
+																<option value="nepal">nepal</option>
+																<option value="china">china</option>
+																<option value="india">india</option>
+																<option value="3">Ultra Premium Plus</option>
+															</select>
+														</div>
+													</div>
+													<div class="row">
+														<div class="input-field col s12">
+															<input  ng-model="pd.height" placeholder="height"lass="validate">
+															
+														</div>
+													</div>
+													<div class="row">
+														
+														<div class="input-field col s12">
+															<input  ng-model="pd.weight" placeholder="weight"  class="validate">
+															
+														</div>
+													</div>
+													<div class="row">
+														<div class="input-field col s12">
+															<select  ng-model="pd.gender">
+																<option disabled selected>gender</option>
+																<option value="1">male</option>
+																<option value="2">female</option>
+															
+															</select>
+														</div>
+													</div>
+													<div class="row">
+														
+														<div class="input-field col s12">
+															<input  ng-model="pd.religion" placeholder="religion"  class="validate">
+															
+														</div>
+													</div>
+													<div class="row">
+														
+														<div class="input-field col s12">
+															<input  ng-model="pd.occupation"  placeholder="occupation" class="validate">
+														
+														</div>
+													</div>
+												</div>
+													
+													
+													<div class="row">
+														<div class="input-field col s12"> <button class="waves-effect waves-light btn-large full-btn" ng-click="vmam.addpd(pd)">Submit User</button> </div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div> -->
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<!--== BOTTOM FLOAT ICON ==-->
+	<section>
+		<div class="fixed-action-btn vertical">
+			<a class="btn-floating btn-large red pulse"> <i class="large material-icons">mode_edit</i> </a>
+			<ul>
+				<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a> </li>
+				<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a> </li>
+				<li><a class="btn-floating green"><i class="material-icons">publish</i></a> </li>
+				<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a> </li>
+			</ul>
+		</div>
+	</section>
+	
